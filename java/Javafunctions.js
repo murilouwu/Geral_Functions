@@ -61,3 +61,8 @@ function ocultar(obj, es){
 function redirect(page) {
     window.location.href = page;
 }
+
+//minha função favorita:
+function adamCendler(btn){
+	btn.click();
+}
