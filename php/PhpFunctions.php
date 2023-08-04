@@ -31,6 +31,7 @@ function InsertBd($Infs, $Dts, $Vls, $Vers, $Configs, $Up){
 
     if ($rows > 0) {
         mensage($Configs['ERROR'][0]);
+	return '';
     } else if ($rows == 0) {
         if (count($Up) > 0) {
             $NewLinkFiles = upFileinPage($Up, $Configs['FilesPast']);
@@ -55,6 +56,7 @@ function InsertBd($Infs, $Dts, $Vls, $Vers, $Configs, $Up){
             return GetBd($Infs, $Dts, $Vls);
         } else {
             mensage($Configs['ERROR'][1]);
+	    return '';
         }
     }
 }
